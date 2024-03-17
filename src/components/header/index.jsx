@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
+import useWindowSize from '../../utils/useWindowSize';
 import './styles.css'
 
 function DesktopHeader() {
@@ -29,19 +30,7 @@ function MobileHeader() {
 }
 
 function Header() {
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
-    const updateMedia = () => {
-        setIsMobile(window.innerWidth <= 768);
-    };
-
-    useEffect(() => {
-        window.addEventListener('resize', updateMedia);
-
-        return () => {
-            window.removeEventListener('resize', updateMedia);
-        };
-    }, []);
+    const isMobile = useWindowSize();
 
     return isMobile ? <MobileHeader/> : <DesktopHeader/>;
 }
