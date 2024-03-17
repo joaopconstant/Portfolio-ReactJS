@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react';
 import useWindowSize from '../../utils/useWindowSize';
-import './styles.css'
+import './styles.css';
 
 function DesktopHeader() {
     return(
-        <header>
+        <nav>
             <div className='logo'>João Constant</div>
             <div>
                 <ul className='links'>
@@ -14,20 +14,38 @@ function DesktopHeader() {
                     <li><a href='#contato'>Contato</a></li>
                 </ul>
             </div>
-        </header>
+        </nav>
     );
 }
 
 function MobileHeader() {
+    const [menuOpen, setMenuOpen] = useState(false);
+  
     const toggleMenu = () => {
-        const menuLinks = document.querySelector('.menu-links');
-        menuLinks.classList.toggle('open');
-    }
-
+      setMenuOpen(!menuOpen);
+    };
+  
     return (
-        <p>Hello World</p>
-    )
-}
+      <nav id="hamburger-nav">
+        <div className="logo">João Constant</div>
+        <div className="hamburger-menu">
+          <div className={`hamburger-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div className={`menu-links ${menuOpen ? 'open' : ''}`}>
+            <ul>
+              <li><a href="#about" onClick={toggleMenu}>Sobre</a></li>
+              <li><a href="#experience" onClick={toggleMenu}>Experiência</a></li>
+              <li><a href="#projects" onClick={toggleMenu}>Projetos</a></li>
+              <li><a href="#contact" onClick={toggleMenu}>Contato</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    );
+  }
 
 function Header() {
     const isMobile = useWindowSize();
