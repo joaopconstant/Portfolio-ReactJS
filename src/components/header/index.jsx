@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './styles.css'
 
-Header = () => {
+function DesktopHeader() {
     return(
         <header>
             <div className='logo'>João Constant</div>
@@ -16,5 +16,35 @@ Header = () => {
         </header>
     );
 }
+
+function MobileHeader() {
+    const toggleMenu = () => {
+        const menuLinks = document.querySelector('.menu-links');
+        menuLinks.classList.toggle('open');
+    }
+
+    return (
+        <p>Hello World</p>
+    )
+}
+
+function Header() {
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    const updateMedia = () => {
+        setIsMobile(window.innerWidth <= 768);
+    };
+
+    useEffect(() => {
+        window.addEventListener('resize', updateMedia);
+
+        return () => {
+            window.removeEventListener('resize', updateMedia);
+        };
+    }, []);
+
+    return isMobile ? <MobileHeader/> : <DesktopHeader/>;
+}
+
 
 export default Header;

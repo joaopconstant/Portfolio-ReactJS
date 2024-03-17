@@ -1,10 +1,10 @@
 import React from 'react'
 import './styles.css'
 
-Profile = () => {
+function Profile() {
     return(
         <profile>
-
+            
         </profile>
     )
 }
