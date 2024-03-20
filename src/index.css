@@ -7,14 +7,23 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  color: #263238;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
 p {
-  color: rgb(85, 85, 85);
+  color: #455a64;
 }
 
 a, .button {

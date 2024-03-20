@@ -2,6 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 
 export const PrimaryButton = styled.button`
+    color: #263238;
     font-weight: 600;
     transition: all 300ms ease;
     padding: 1rem;
@@ -11,13 +12,13 @@ export const PrimaryButton = styled.button`
     cursor: pointer;
 
     &:hover {
-        background-color: rgb(53, 53, 53);
+        background-color: #263238;
         color: white;
     }
 `;
 
 export const Secondarybutton = styled.button`
-    background-color: rgb(53, 53, 53);
+    background-color: #455a64;
     color: white;
     font-weight: 600;
     transition: all 300ms ease;
@@ -28,6 +29,17 @@ export const Secondarybutton = styled.button`
     cursor: pointer;
 
     &:hover {
-        background-color: rgb(0, 0, 0);
+        background-color: #263238;
     }
+`;
+
+export const Title = styled.h1`
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1;
+    padding: 0.5rem 0;
+`;
+
+export const SectionSubtitle = styled.p`
+    text-align: center;
 `;

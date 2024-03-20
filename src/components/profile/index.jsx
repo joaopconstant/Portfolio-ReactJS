@@ -1,16 +1,16 @@
 import React from 'react'
 import './styles.css'
-import { PrimaryButton, Secondarybutton } from '../../globalComponents';
+import { PrimaryButton, Secondarybutton, SectionSubtitle, Title } from '../../globalComponents';
 
 function Profile() {
     return(
         <section id='profile'>
             <div className='section__pic-container'>
-                <img src="src/assets/profile-pic.jpg" alt="Joao Constant profile picture"/>
+                <img className='profile-pic' src="src/assets/profile-pic.jpg" alt="Joao Constant profile picture"/>
             </div>
             <div className='section__text'>
-                <p className='section__text__p1'>Olá, eu sou</p>
-                <h1 className='title'>João Pedro Constant</h1>
+                <SectionSubtitle>Olá, eu sou</SectionSubtitle>
+                <Title>João Pedro Constant</Title>
                 <p className='section__text__p2'>Full Stack Developer</p>
                 <div className='btn-container'>
                     <PrimaryButton onClick={() => window.open("src/assets/joao-constant-resume.pdf")}>Currículo</PrimaryButton>

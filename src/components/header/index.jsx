@@ -8,10 +8,10 @@ function DesktopHeader() {
             <div className='logo'>CONS7ANT</div>
             <div>
                 <ul className='links'>
-                    <li><a href='#sobre'>Sobre</a></li>
-                    <li><a href='#experiencia'>Experiência</a></li>
-                    <li><a href='#projetos'>Projetos</a></li>
-                    <li><a href='#contato'>Contato</a></li>
+                    <li><a href='#about'>Sobre</a></li>
+                    <li><a href='#experience'>Experiência</a></li>
+                    <li><a href='#projects'>Projetos</a></li>
+                    <li><a href='#contact'>Contato</a></li>
                 </ul>
             </div>
         </nav>
