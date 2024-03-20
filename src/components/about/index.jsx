@@ -13,7 +13,11 @@ function About() {
                 </div>
                 <div className='text-container'>
                     <p className='text-container-title'>Desenvolvedor Full Stack Júnior</p>
-                    <p>Moro no Rio de janeiro, tenho 21 anos e sou paixonado por tecnologia desde a infância. Tenho um forte interesse em desenvolvimento de softwares e estou constantemente buscando aprender e aprimorar minhas habilidades. Sempre fui movido pela resolução de problemas e pela busca de soluções inovadoras. Ao invés de reclamar das adversidades, eu as encaro como desafios e busco maneiras criativas de superá-los.</p>
+                    <p>
+                        Moro no Rio de janeiro, tenho 21 anos e sou paixonado por tecnologia desde a infância. 
+                        Tenho um forte interesse em desenvolvimento de softwares e estou constantemente buscando aprender e aprimorar minhas habilidades.
+                        Sempre fui movido pela resolução de problemas e pela busca de soluções inovadoras. Ao invés de reclamar das adversidades, eu as encaro como desafios e busco maneiras criativas de superá-los.
+                    </p>
                 </div>
             </div>
         </section>

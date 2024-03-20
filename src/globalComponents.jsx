@@ -8,7 +8,7 @@ export const PrimaryButton = styled.button`
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
+    border: #263238 0.1rem solid;
     cursor: pointer;
 
     &:hover {
@@ -25,7 +25,7 @@ export const Secondarybutton = styled.button`
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
+    border: #455a64 0.1rem solid;
     cursor: pointer;
 
     &:hover {
