@@ -19,11 +19,28 @@ section {
     height: 70vh;
 }
 
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .section__pic-container {
     display: flex;
     height: 400px;
     width: 400px;
     margin: auto 0;
+    animation: floatAnimation 3s ease-in-out infinite;
+}
+
+.section__pic-container img {
+    border-radius: 15rem;
 }
 
 .section__text {
@@ -47,6 +64,8 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
+    line-height: 1;
+    padding: 0.5rem 0;
 }
 
 .socials-container {

@@ -29,6 +29,7 @@ a:hover {
 
 .logo {
     font-size: 2rem;
+    font-weight: bold;
 }
 
 .logo:hover {

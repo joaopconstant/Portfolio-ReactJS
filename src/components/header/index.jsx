@@ -5,7 +5,7 @@ import './styles.css';
 function DesktopHeader() {
     return(
         <nav>
-            <div className='logo'>João Constant</div>
+            <div className='logo'>CONS7ANT</div>
             <div>
                 <ul className='links'>
                     <li><a href='#sobre'>Sobre</a></li>
@@ -27,7 +27,7 @@ function MobileHeader() {
   
     return (
       <nav id="hamburger-nav">
-        <div className="logo">João Constant</div>
+        <div className="logo">CONS7ANT</div>
         <div className="hamburger-menu">
           <div className={`hamburger-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
             <span></span>

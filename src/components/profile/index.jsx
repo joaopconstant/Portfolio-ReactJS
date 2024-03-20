@@ -1,13 +1,12 @@
 import React from 'react'
 import './styles.css'
 import { PrimaryButton, Secondarybutton } from '../../globalComponents';
-import useWindowSize from '../../utils/useWindowSize';
 
 function Profile() {
     return(
         <section id='profile'>
             <div className='section__pic-container'>
-                <img src="src/assets/profile-pic.jpg" alt="Joao Constant profile picture" style={{borderRadius: "15rem"}} />
+                <img src="src/assets/profile-pic.jpg" alt="Joao Constant profile picture"/>
             </div>
             <div className='section__text'>
                 <p className='section__text__p1'>Olá, eu sou</p>
