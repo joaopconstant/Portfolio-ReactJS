@@ -6,7 +6,7 @@ function Profile() {
     return(
         <section id='profile'>
             <div className='section__pic-container'>
-                <img className='profile-pic' src="src/assets/profile-pic.jpg" alt="Joao Constant profile picture"/>
+                <img className='profile-pic' src="./src/assets/profile-pic.JPG" alt="Joao Constant profile picture"/>
             </div>
             <div className='section__text'>
                 <SectionSubtitle>Olá, eu sou</SectionSubtitle>
