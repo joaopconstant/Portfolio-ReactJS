@@ -1,3 +1,18 @@
-.about-pic {
-    border-radius: 2rem;
+.about-container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 70vh;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    max-width: 30rem;
+}
+
+.text-container-title {
+    font-size: 1.75rem;
+    font-weight: 600;
 }

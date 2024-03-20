@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 70vh;
+    height: 83vh;
 }
 
 @keyframes floatAnimation {

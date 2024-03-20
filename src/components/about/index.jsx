@@ -7,11 +7,14 @@ function About() {
         <section id="about">
             <SectionSubtitle>Conheça um pouco</SectionSubtitle>
             <Title>Sobre Mim</Title>
-            <div className='section__pic-container'>
-                <img className='about-pic' src='src\assets\about-pic.png'></img>
-            </div>
-            <div className='text-container'>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea magni dolorem exercitationem adipisci. Fugiat ea incidunt porro harum maiores, asperiores vitae culpa, expedita odio autem ipsa, consequatur voluptates mollitia eius.</p>
+            <div className='about-container'>
+                <div className='section__pic-container'>
+                    <img className='about-pic' src='src\assets\about-pic.png'></img>
+                </div>
+                <div className='text-container'>
+                    <p className='text-container-title'>Desenvolvedor Full Stack Júnior</p>
+                    <p>Moro no Rio de janeiro, tenho 21 anos e sou paixonado por tecnologia desde a infância. Tenho um forte interesse em desenvolvimento de softwares e estou constantemente buscando aprender e aprimorar minhas habilidades. Sempre fui movido pela resolução de problemas e pela busca de soluções inovadoras. Ao invés de reclamar das adversidades, eu as encaro como desafios e busco maneiras criativas de superá-los.</p>
+                </div>
             </div>
         </section>
     )
