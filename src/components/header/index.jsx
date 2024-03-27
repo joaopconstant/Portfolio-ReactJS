@@ -9,7 +9,7 @@ function DesktopHeader() {
             <div>
                 <ul className='links'>
                     <li><a href='#about'>Sobre</a></li>
-                    <li><a href='#experience'>Experiência</a></li>
+                    <li><a href='#techstack'>Experiência</a></li>
                     <li><a href='#projects'>Projetos</a></li>
                     <li><a href='#contact'>Contato</a></li>
                 </ul>
