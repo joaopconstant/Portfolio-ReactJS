@@ -2,7 +2,8 @@ import { useState } from 'react'
 import Header from './components/header'
 import Profile from './components/profile'
 import About from './components/about'
-import Techstack from './components/experience'
+import Techstack from './components/techstack'
+import Projects from './components/projects'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Profile/>
       <About/>
       <Techstack/>
+      <Projects/>
     </>
   )
 }
